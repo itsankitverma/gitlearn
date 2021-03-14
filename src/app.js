@@ -4,9 +4,10 @@ const app = express();
 app.set("view engine","hbs")
 
 app.get("/", (req, res) => {
-//   res.send("this is home page");
+  // res.send("this is home page");
 res.render("index",{
-    name:"Ankit Verma"
+    name:"Ankit Verma",
+    About:"About Me"
 })
 });
 
